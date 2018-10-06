@@ -201,8 +201,8 @@ def count_items(column_list):
         else:
             counters[value] = 1
     item_types = list(counters.keys())
-    count_items = list(counters.values())
-    return item_types, count_items
+    quantities = list(counters.values())
+    return item_types, quantities
 
 values_column = column_to_list(data_list, -3)
 counters = count_items(values_column)
@@ -307,8 +307,8 @@ def count_items(column_list):
         else:
             counters[value] = 1
     item_types = list(counters.keys())
-    count_items = list(counters.values())
-    return item_types, count_items
+    quantities = list(counters.values())
+    return item_types, quantities
 
 
 if answer == "yes":
